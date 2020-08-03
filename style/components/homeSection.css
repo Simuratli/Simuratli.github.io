@@ -1,0 +1,100 @@
+@import './fonts.css';
+.home {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    z-index: -2;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile-info h1 {
+    font-size: 70px;
+    margin-top: 60px;
+    font-family: 'Montserrat';
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.profile-info h1 .name {
+    font-size: 70px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.firstLetter img {
+    height: 50px;
+}
+
+@media(max-width:931px) {
+    .profile-info h1 {
+        font-size: 50px;
+    }
+    .profile-info h1 .name {
+        font-size: 50px;
+    }
+    .firstLetter img {
+        height: 40px;
+    }
+}
+
+@media(max-width:808px) {
+    .profile-info h1 {
+        font-size: 30px;
+    }
+    .profile-info h1 .name {
+        font-size: 30px;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+    }
+    .firstLetter img {
+        height: 20px;
+    }
+    .profile img {
+        height: 140px;
+    }
+}
+
+@media(max-width:518px) {
+    .firstLetter img {
+        height: 23px;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-info {
+        height: inherit;
+        position: relative;
+        top: -30px;
+    }
+    .profile {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:360px) {
+    .firstLetter img {
+        height: 18px;
+    }
+    .profile-info {
+        margin-top: -30px;
+        text-align: left;
+    }
+    .profile-info h1 {
+        font-size: 25px;
+    }
+    .profile-info h1 .name {
+        font-size: 25px;
+    }
+    .firstLetter img {
+        height: 20px;
+    }
+    .profile img {
+        height: 120px;
+    }
+}

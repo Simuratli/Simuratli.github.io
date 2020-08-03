@@ -1,0 +1,43 @@
+.contact {
+    position: relative;
+}
+
+.toTop {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.toTop-tooltip {
+    display: inline-block;
+    width: max-content;
+    margin-left: -14px;
+    margin-bottom: 5px;
+    transition: opacity 0.5s;
+    opacity: 0;
+    color: black;
+}
+
+.toTop:hover .toTop-tooltip {
+    opacity: 1;
+}
+
+@media(max-width:590px) {
+    .toTop {
+        position: absolute;
+        bottom: 90px;
+        right: 20px;
+        background-color: white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.contact {
+    padding: 60px 20px;
+}

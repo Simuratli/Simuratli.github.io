@@ -1,0 +1,101 @@
+@import './fonts.css';
+.navbar {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navbar.activenavbar {
+    right: 0;
+    opacity: 1;
+}
+
+.navbar_list {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.list_item a {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 5px 5px;
+    width: 100%;
+    display: block;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    font-family: 'Anton';
+}
+
+.list_item a:hover {
+    border-radius: 5px;
+    border-bottom: inset 5px;
+    border-top: inset 5px;
+    border-image-slice: 1;
+    border-image-source: conic-gradient( hsl(100 100% 60%), hsl(200 100% 60%), hsl(100 100% 60%));
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    width: 90%;
+    background-color: white;
+    height: 50px;
+    align-items: center;
+}
+
+.nav h3 {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.nav span {
+    display: inline-block;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger img {
+    height: 30px;
+}
+
+.close {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.close img {
+    height: 50px;
+}
+
+@media(max-width:590px) {
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:360px) {
+    .list_item a {
+        font-size: 30px;
+    }
+}

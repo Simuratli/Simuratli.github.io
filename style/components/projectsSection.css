@@ -1,0 +1,12 @@
+.projects {
+    padding: 50px 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 95vh;
+    overflow-y: auto;
+}
+
+.projects::-webkit-scrollbar {
+    height: 0;
+}

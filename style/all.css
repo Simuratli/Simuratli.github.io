@@ -1,0 +1,8 @@
+@import './components/main.css';
+@import './components/navbar.css';
+@import './components/sideLinks.css';
+@import './components/contactSection.css';
+@import './components/homeSection.css';
+@import './components/projectsSection.css';
+@import './components/cards.css';
+@import'./components/skillSection.css'

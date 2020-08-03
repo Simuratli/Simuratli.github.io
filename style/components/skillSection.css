@@ -1,0 +1,50 @@
+.skills {
+    padding: 60px 0;
+}
+
+.skills h1 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.skill-card svg {
+    width: 140px;
+    padding: 40px;
+    fill: cadetblue;
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px black, -2px -2px 5px 2px white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.skill-card:hover svg {
+    fill: cornflowerblue;
+    transition: 0.5s;
+}
+
+.skill-container h1 {
+    display: block;
+}
+
+@media(max-width:700px) {
+    .skill-card svg {
+        width: 70px;
+        padding: 10px;
+        fill: cadetblue;
+        margin-right: 10px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 5px black, -2px -2px 5px 2px white;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
